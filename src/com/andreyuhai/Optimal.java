@@ -30,10 +30,10 @@ public class Optimal extends PageReplacementAlgorithm{
             }
         } else {
             if(!isInMemory(pageNum)) {
-                System.out.println(pageNum);
+                //System.out.println(pageNum);
                 pageFault++;
                 int indexToSet = (lastIndexList.indexOf(-1) == -1) ? lastIndexList.indexOf(Collections.max(lastIndexList)) : lastIndexList.indexOf(-1);
-                System.out.println("Index to set: " + indexToSet);
+                //System.out.println("Index to set: " + indexToSet);
                 memory.set(indexToSet, pageNum);
                 lastIndexList.set(indexToSet, pageReferenceString.subList(currentIndex + 1, pageReferenceString.size()).lastIndexOf(pageNum));
             } else {
