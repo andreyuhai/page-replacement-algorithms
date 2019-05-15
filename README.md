@@ -10,4 +10,5 @@
  - Second Chance
  - Random
 
+Memory is simply implemented as a List of frames (or ints which stand for page numbers).
 These algorithms simply return the total page fault.
